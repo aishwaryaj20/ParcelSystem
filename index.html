@@ -1,0 +1,41 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+      <h1>Parcel System </h1>
+      
+    </div>
+    <div id="parcel-container">
+    </div>
+    <div class="cont_ges">
+        <span class="ubers">Search</span>
+        <input id="searchbar" type="text" value="Search.." onclick="this.value='';" onkeyup="search();">
+        <div id="listing"></div>
+    </div>
+    <div id="input-container">
+     
+     
+        <select id="parcel-group">
+            <option value="">Select Group</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Kolkata">Kolkata</option>
+        </select>
+        
+        <button id="delete">Delete</button>
+        <button id="refresh">Refresh</button>
+        <button id="show-final"> Final List</button>
+    </div>
+    
+    <div id="selected-parcel-container">
+        Selected Parcel: <span id="selected-parcel"></span>
+    </div>
+    <script src="Parcel.js"></script>
+</body>
+</html>
